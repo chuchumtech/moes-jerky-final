@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import Typography from '@mui/material/Typography';
 import FormLabel from '@mui/material/FormLabel';
 
 let squareScriptLoaded = false;
@@ -32,7 +31,7 @@ const SquarePaymentForm = ({ applicationId, locationId, amount, onToken, onError
   useEffect(() => {
     let isMounted = true;
     let card;
-    let destroyed = false;
+
     setLoading(true);
     loadSquareScript().then(async () => {
       if (!window.Square || !isMounted) return;
