@@ -1,0 +1,234 @@
+/* Moe's Jerky Admin Portal Styles */
+
+/* Login Styles */
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.admin-logo {
+  width: 110px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+}
+.admin-code-inputs {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0 10px 0;
+}
+.admin-code-box {
+  width: 38px;
+  height: 44px;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 8px;
+  border: 1.5px solid #8b0000;
+  outline: none;
+}
+.admin-code-box:focus {
+  border: 2px solid #d32f2f;
+}
+.admin-error {
+  color: #d32f2f;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Orders Table Styles */
+.orders-table-wrap {
+  overflow-x: auto;
+  margin-top: 18px;
+}
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(139,0,0,0.07);
+  font-size: 1em;
+  min-width: 760px;
+}
+.orders-table th, .orders-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #f0eaea;
+  text-align: left;
+}
+.orders-table th {
+  background: #ffeaea;
+  color: #8b0000;
+  font-weight: 700;
+}
+.orders-table tr:last-child td {
+  border-bottom: none;
+}
+.orders-table button {
+  background: #fff;
+  color: #8b0000;
+  border: 1.5px solid #8b0000;
+  border-radius: 6px;
+  padding: 5px 14px;
+  font-size: 0.98em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.orders-table button:hover {
+  background: #8b0000;
+  color: #fff;
+}
+
+/* Modal Styles */
+.modal-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  border-radius: 14px;
+  padding: 32px 28px 22px 28px;
+  min-width: 320px;
+  max-width: 98vw;
+  box-shadow: 0 6px 32px rgba(139,0,0,0.13);
+  position: relative;
+}
+.modal h3 {
+  margin-top: 0;
+  color: #8b0000;
+}
+.modal button {
+  background: #fff;
+  color: #8b0000;
+  border: 1.5px solid #8b0000;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+}
+.modal button:hover {
+  background: #8b0000;
+  color: #fff;
+}
+
+/* Layout Styles */
+.admin-portal-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8fa;
+}
+
+.sidebar {
+  width: 230px;
+  background: #fff;
+  box-shadow: 2px 0 12px rgba(139,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-height: 100vh;
+}
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 28px 18px 22px 18px;
+  font-weight: 700;
+  font-size: 1.18em;
+  color: #8b0000;
+  border-bottom: 1px solid #eee;
+}
+.sidebar-logo img {
+  width: 38px;
+  border-radius: 8px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0 0 0 0;
+  margin: 0;
+  flex: 1;
+}
+.sidebar ul li {
+  padding: 16px 28px;
+  cursor: pointer;
+  color: #222;
+  font-size: 1.07em;
+  border-left: 4px solid transparent;
+  transition: background 0.13s, border-color 0.13s, color 0.13s;
+}
+.sidebar ul li.active, .sidebar ul li:hover {
+  background: #ffeaea;
+  border-left: 4px solid #8b0000;
+  color: #8b0000;
+}
+.sidebar-logout {
+  background: #fff;
+  color: #8b0000;
+  border: 1.5px solid #8b0000;
+  border-radius: 8px;
+  margin: 22px 18px 24px 18px;
+  padding: 10px 0;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.sidebar-logout:hover {
+  background: #8b0000;
+  color: #fff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 48px 42px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+.main-content h2 {
+  font-size: 2em;
+  margin-bottom: 18px;
+  color: #8b0000;
+}
+
+@media (max-width: 900px) {
+  .admin-portal-layout {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    min-height: unset;
+    flex-direction: row;
+    overflow-x: auto;
+    box-shadow: none;
+    border-bottom: 1px solid #eee;
+  }
+  .sidebar-logo {
+    display: none;
+  }
+  .sidebar ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .sidebar ul li {
+    padding: 14px 18px;
+    border-left: none;
+    border-bottom: 4px solid transparent;
+  }
+  .sidebar ul li.active, .sidebar ul li:hover {
+    background: #ffeaea;
+    border-left: none;
+    border-bottom: 4px solid #8b0000;
+  }
+  .sidebar-logout {
+    margin: 10px 10px 10px 10px;
+  }
+  .main-content {
+    padding: 32px 10px;
+  }
+}

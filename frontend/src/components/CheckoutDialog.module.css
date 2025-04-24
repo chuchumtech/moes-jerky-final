@@ -1,0 +1,16 @@
+.checkoutField {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 16px auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.squareCardField {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto 16px auto;
+  min-height: 48px;
+  box-sizing: border-box;
+  display: block;
+}

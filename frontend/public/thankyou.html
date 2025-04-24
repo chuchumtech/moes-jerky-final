@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | Moe's Jerky</title>
+  <link rel="icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: #f8f8f8;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .thankyou-container {
+      background: rgba(255,255,255,0.95);
+      border-radius: 20px;
+      box-shadow: 0 4px 32px rgba(139,0,0,0.10);
+      padding: 2.5rem 2.5rem 2rem 2.5rem;
+      max-width: 400px;
+      width: 100%;
+      margin: 2rem auto;
+      text-align: center;
+    }
+    .thankyou-container h1 {
+      color: #8b0000;
+      font-size: 2.1em;
+      margin-bottom: 0.5em;
+    }
+    .thankyou-emoji {
+      font-size: 2.5em;
+      margin-bottom: 0.7em;
+    }
+    .order-summary {
+      margin-top: 2em;
+      background: #fff8f8;
+      border-radius: 12px;
+      box-shadow: 0 1px 8px rgba(139,0,0,0.06);
+      padding: 1.5em 1em;
+      text-align: left;
+    }
+    .order-summary h2 {
+      color: #a83232;
+      margin-top: 0;
+      margin-bottom: 0.7em;
+      font-size: 1.15em;
+    }
+    .order-section {
+      margin-bottom: 1.2em;
+    }
+    .order-section h3 {
+      margin: 0 0 0.3em 0;
+      font-size: 1em;
+      color: #8b0000;
+    }
+    .order-summary ul {
+      padding-left: 1.2em;
+      margin: 0;
+    }
+    .order-summary li {
+      margin-bottom: 0.2em;
+    }
+    .thankyou-link {
+      display: inline-block;
+      margin-top: 2em;
+      color: #fff;
+      background: linear-gradient(90deg, #a83232 0%, #8b0000 100%);
+      padding: 0.85em 2em;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1em;
+      box-shadow: 0 2px 8px rgba(139,0,0,0.06);
+      transition: background 0.2s, transform 0.12s;
+    }
+    .thankyou-link:hover {
+      background: linear-gradient(90deg, #8b0000 0%, #a83232 100%);
+      transform: translateY(-2px) scale(1.025);
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <div class="thankyou-emoji">🐄🔥</div>
+    <h1>Thank you for your order!</h1>
+    <p>Your jerky is on its way.</p>
+    <div id="orderDetails">
+      <div style="color:#888; margin:2em 0;">Loading your order details...</div>
+    </div>
+    <a href="/" class="thankyou-link">Return to Shop</a>
+  </div>
+  <script src="thankyou.js"></script>
+</body>
+</html>

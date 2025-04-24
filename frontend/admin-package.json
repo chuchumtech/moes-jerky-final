@@ -1,0 +1,10 @@
+{
+  "name": "admin-portal",
+  "version": "0.1.0",
+  "private": true,
+  "main": "src/admin/index.js",
+  "dependencies": {},
+  "scripts": {
+    "build": "react-scripts build --webpackConfig webpack.admin.js"
+  }
+}

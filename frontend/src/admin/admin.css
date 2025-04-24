@@ -1,0 +1,40 @@
+.admin-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #fafbfc;
+}
+.admin-logo {
+  width: 90px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+}
+.admin-code-inputs {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0 12px 0;
+}
+.admin-code-box {
+  width: 44px;
+  height: 44px;
+  font-size: 2rem;
+  text-align: center;
+  border: 2px solid #b71c1c;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  color: #b71c1c;
+  font-weight: 700;
+  transition: border 0.2s;
+}
+.admin-code-box:focus {
+  border: 2.5px solid #8b0000;
+  background: #fff5f5;
+}
+.admin-error {
+  color: #b71c1c;
+  font-weight: bold;
+  margin-top: 12px;
+}
