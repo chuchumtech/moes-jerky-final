@@ -61,7 +61,6 @@ const SquarePaymentForm = ({ applicationId, locationId, amount, onToken, onError
     });
     return () => {
       isMounted = false;
-      destroyed = true;
       if (cardInstanceRef.current && cardInstanceRef.current.destroy) {
         cardInstanceRef.current.destroy();
         cardInstanceRef.current = null;
