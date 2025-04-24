@@ -58,7 +58,7 @@ function App() {
         deliveryDate: deliveryDate.id,
         deliveryDateLabel: deliveryDate.label
       };
-      const resp = await axios.post('http://localhost:3050/api/orders', orderPayload);
+      const resp = await axios.post('https://moes-jerky-final.onrender.com/api/orders', orderPayload);
       setCartItems([]);
       setCheckoutOpen(false);
       // Pass order details as query param for thank you page
@@ -129,6 +129,19 @@ function App() {
       </Fab>
     </div>
   );
+}
+
+// Redirect logic for moesjerky.shop
+if (typeof window !== 'undefined') {
+  const { hostname, protocol } = window.location;
+  // Force HTTPS
+  if (protocol !== 'https:') {
+    window.location.href = 'https://' + hostname + window.location.pathname + window.location.search;
+  }
+  // Redirect www to root domain
+  if (hostname === 'www.moesjerky.shop') {
+    window.location.href = 'https://moesjerky.shop' + window.location.pathname + window.location.search;
+  }
 }
 
 export default App;

@@ -13,7 +13,7 @@ const ProductList = ({ onAddToCart, cartItems, onUpdateQty, onOpenCart }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:3050/api/items')
+    axios.get('https://moes-jerky-final.onrender.com/api/items')
       .then(res => {
         setProducts(res.data);
         setLoading(false);

@@ -74,7 +74,7 @@ const CheckoutDialog = ({ open, onClose, cartItems = [], onSubmit, deliveryType,
     setPaying(true);
     setPaymentError('');
     try {
-      const resp = await axios.post('http://localhost:3050/api/square/pay', {
+      const resp = await axios.post('https://moes-jerky-final.onrender.com/api/square/pay', {
         sourceId: token,
         amount: total,
         orderInfo: { name: fields.name, email: fields.email },
