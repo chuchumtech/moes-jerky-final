@@ -54,7 +54,7 @@ async function sendOrderEmails(order) {
     html_body: `
       <div style="background:#f8f8f8;padding:0;margin:0;font-family:'Segoe UI',sans-serif;">
         <div style="max-width:480px;margin:32px auto;background:#fff;border-radius:18px;box-shadow:0 4px 32px rgba(139,0,0,0.10);padding:32px 24px 24px 24px;text-align:center;">
-          <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745" alt="Moe's Jerky Logo" style="width:120px;margin-bottom:20px;border-radius:14px;"/>
+          <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489" alt="Moe's Jerky Logo" style="width:120px;margin-bottom:20px;border-radius:14px;"/>
           <h2 style="color:#8b0000;font-size:2em;margin-bottom:0.3em;margin-top:0;">Thank You for Your Order!</h2>
           <p style="font-size:1.15em;margin-bottom:18px;">Hi${order.name ? ' ' + order.name : ''},<br>
           We can’t wait for you to enjoy Moe’s Jerky.<br>
@@ -96,7 +96,7 @@ async function sendOrderEmails(order) {
     html_body: `
       <div style="background:#f8f8f8;padding:0;margin:0;font-family:'Segoe UI',sans-serif;">
         <div style="max-width:520px;margin:32px auto;background:#fff;border-radius:18px;box-shadow:0 4px 32px rgba(139,0,0,0.10);padding:32px 28px 28px 28px;text-align:center;">
-          <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745" alt="Moe's Jerky Logo" style="width:110px;margin-bottom:18px;border-radius:14px;"/>
+          <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489" alt="Moe's Jerky Logo" style="width:110px;margin-bottom:18px;border-radius:14px;"/>
           <h2 style="color:#8b0000;font-size:1.7em;margin-bottom:0.2em;margin-top:0;">New Order Placed</h2>
           <div style="background:#fff8f8;border-radius:12px;padding:15px 14px 10px 14px;margin:0 auto 18px auto;max-width:370px;box-shadow:0 2px 8px rgba(139,0,0,0.06);text-align:left;">
             <div style="font-size:1.07em;margin-bottom:9px;"><b style="color:#8b0000;">Order #${order.orderNumber || ''}</b></div>
