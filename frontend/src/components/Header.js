@@ -8,7 +8,7 @@ const Header = () => (
     <Toolbar>
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', py: 2 }}>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745"
+          src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489"
           alt="Moe's Jerky Logo"
           style={{ height: 96 }}
         />

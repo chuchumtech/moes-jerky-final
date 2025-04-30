@@ -52,7 +52,7 @@ const ProductList = ({ onAddToCart, cartItems, onUpdateQty, onOpenCart }) => {
             ) : (
               <Box sx={{ position: 'relative', height: 180, bgcolor: '#f4f4f6', borderBottom: '1px solid #e0e0e0' }}>
                 <img
-                  src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745"
+                  src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489"
                   alt={product.name}
                   style={{ width: '100%', height: '100%', objectFit: 'contain', opacity: 0.25 }}
                 />
