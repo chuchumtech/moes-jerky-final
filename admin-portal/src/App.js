@@ -93,7 +93,7 @@ function Sidebar({ section, setSection, onLogout }) {
   return (
     <nav className="sidebar">
       <div className="sidebar-logo">
-        <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745" alt="Logo" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489" alt="Logo" />
         <span>Moe's Jerky Admin</span>
       </div>
       <ul>
@@ -157,7 +157,7 @@ function App() {
   if (!loggedIn) {
     return (
       <div className="admin-login">
-        <img className="admin-logo" src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/logo.png?alt=media&token=e721a51b-0de2-4925-bbcb-5001f6109745" alt="Moe's Jerky Logo" />
+        <img className="admin-logo" src="https://firebasestorage.googleapis.com/v0/b/moes-jerky-dd53f.firebasestorage.app/o/LOGO%20(2).png?alt=media&token=76b964e3-8c4a-4cf0-8d67-bcbdc3056489" alt="Moe's Jerky Logo" />
         <AdminLogin onLogin={handleLogin} error={error} />
       </div>
     );
